@@ -12,16 +12,16 @@ body {
 
 main {
     padding: 20px;
-    flex: 1; /* Allow main to grow and push footer to bottom */
-    display: grid; /* Use grid for main content layout */
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px; /* Gap between the grid items */
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .blog-post-container {
-    display: flex; /* Use flex to layout blog post cards */
-    flex-wrap: wrap; /* Allow the cards to wrap to the next line */
-    gap: 20px; /* Add space between the cards */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .blog-post-card {
@@ -29,14 +29,14 @@ main {
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    background-color: #ffffff; /* Card background color */
-    flex: 1 1 calc(100% - 40px); /* Responsive width for the cards */
+    background-color: #ffffff;
+    flex: 1 1 calc(100% - 40px);
     box-sizing: border-box;
 }
 
 .blog-post-card img {
     max-width: 100%;
-    width: 250px; /* Set a specific width for the images */
+    width: 250px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -58,9 +58,9 @@ article {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    display: grid; /* Use grid for article layout */
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px; /* Gap between the grid items */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 article img {
@@ -72,24 +72,24 @@ article img {
 .author-info {
     text-align: center;
     margin: 20px 0;
-    display: grid; /* Use grid for author info layout */
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 10px; /* Gap between the grid items */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 .social-sharing {
     text-align: center;
     margin: 20px 0;
-    display: grid; /* Use grid for social sharing layout */
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 10px; /* Gap between the grid items */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .social-sharing ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Use flex to layout social sharing items */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .social-sharing ul li {
@@ -113,11 +113,10 @@ button:hover {
     background-color: #555;
 }
 
-/* Typography Styles */
 h1 {
     font-family: 'Georgia', serif;
     font-size: 2.5em;
-    color: #2c3e50; /* Dark blue color */
+    color: #2c3e50;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 20px 0;
@@ -126,7 +125,7 @@ h1 {
 h2 {
     font-family: 'Helvetica', sans-serif;
     font-size: 2em;
-    color: #3498db; /* Light blue color */
+    color: #3498db;
     text-transform: capitalize;
     margin: 15px 0;
 }
@@ -134,7 +133,7 @@ h2 {
 h3 {
     font-family: 'Verdana', sans-serif;
     font-size: 1.75em;
-    color: #e74c3c; /* Red color */
+    color: #e74c3c;
     text-transform: lowercase;
     margin: 10px 0;
 }
@@ -146,36 +145,32 @@ p {
     margin: 10px 0;
 }
 
-/* Text Styling */
 strong {
-    color: #2c3e50; /* Dark blue color */
+    color: #2c3e50;
     font-weight: bold;
 }
 
 em {
-    color: #e74c3c; /* Red color */
+    color: #e74c3c;
     font-style: italic;
 }
 
 u {
-    color: #3498db; /* Light blue color */
+    color: #3498db;
     text-decoration: underline;
 }
 
 blockquote {
     font-style: italic;
-    color: #7f8c8d; /* Gray color */
+    color: #7f8c8d;
     border-left: 5px solid #bdc3c7;
     padding-left: 10px;
     margin: 20px 0;
 }
 
-/* Responsive Design */
-
-/* Mobile devices */
 @media (max-width: 600px) {
     .blog-post-card {
-        flex: 1 1 calc(100% - 20px); /* Full width on mobile */
+        flex: 1 1 calc(100% - 20px);
     }
 
     h1 {
@@ -192,14 +187,14 @@ blockquote {
     }
 
     .social-sharing {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
     }
 }
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 900px) {
     .blog-post-card {
-        flex: 1 1 calc(50% - 20px); /* Two columns on tablet */
+        flex: 1 1 calc(50% - 20px);
     }
 
     h1 {
@@ -216,14 +211,14 @@ blockquote {
     }
 
     .social-sharing {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Desktops */
 @media (min-width: 901px) {
     .blog-post-card {
-        flex: 1 1 calc(33.33% - 20px); /* Three columns on desktop */
+        flex: 1 1 calc(33.33% - 20px);
     }
 
     h1 {
@@ -240,6 +235,6 @@ blockquote {
     }
 
     .social-sharing {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
