@@ -22,9 +22,4 @@ This project is a responsive blog website designed to be fully functional and vi
   - **Flexbox**: Used for header navigation and social sharing sections.
   - **Grid Layout**: Used for main content layout and blog post cards.
 - **Responsive Design**: Media queries to ensure the website looks great on all devices.
-
-## How to Use
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/responsive-blog-website.git
+  
